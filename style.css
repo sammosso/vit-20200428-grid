@@ -1,0 +1,81 @@
+* {box-sizing: border-box;}
+
+body {
+margin-left: 40px;
+margin-right: 40px;
+}
+
+nav {
+    height: 100px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.nav_menu {
+    display: inline;
+    margin: 0 20px 0 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, sans-serif;
+    font-size: 13px;
+}
+
+.nav_skype {
+    padding-left: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, sans-serif;
+    font-size: larger;
+    font-weight: 600;
+}
+
+.mslogo > img {
+    max-width: 50%;
+    height: auto;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 40px;
+}
+
+.grid-container > .main, .sub-2, .sub-3, .sub-4 {
+    background-color: rgb(212, 212, 212);
+    border-radius: 0 20px 20px 20px;
+}
+
+.main {
+    height: 400px;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+.sub-2 {
+    height: 400px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+
+.sub-3 {
+    height: 400px;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+
+.sub-4 {
+    height: 400px;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 3;
+}
+
+h2 {
+    font-family: Helvetica, sans-serif;
+    font-size: 40px;
+}
+
