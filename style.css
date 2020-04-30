@@ -1,5 +1,9 @@
 * {box-sizing: border-box;}
 
+html {
+    margin: 0 auto;
+}
+
 body {
 margin-left: 40px;
 margin-right: 40px;
@@ -38,21 +42,23 @@ nav {
 }
 
 .grid-container > .main, .sub-2, .sub-3, .sub-4 {
-    background-color: rgb(212, 212, 212);
+    background-color: rgb(226, 226, 226);
     border-radius: 0 20px 20px 20px;
 }
 
 .grid-container-2 {
     display: grid;
     grid-template-columns: auto auto auto auto auto auto;
-    gap: 40px;
+    gap: 23px;
+    width: 100%;
+    overflow: hidden;
 }
 
 .grid-container-2 > div {
-    background-color: rgb(212, 212, 212);
+    background-color: rgb(226, 226, 226);
     border-radius: 0 20px 20px 20px;
     width: 300px;
-    height: 400px;
+    height: 380px;
 }
 
 .main {
@@ -64,7 +70,7 @@ nav {
 }
 
 .sub-2 {
-    height: 400px;
+    height: 550px;
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 2;
@@ -72,7 +78,7 @@ nav {
 }
 
 .sub-3 {
-    height: 400px;
+    height: 550px;
     grid-column-start: 3;
     grid-column-end: 5;
     grid-row-start: 2;
@@ -90,5 +96,37 @@ nav {
 h2 {
     font-family: Helvetica, sans-serif;
     font-size: 40px;
+    padding-left: 80px;
 }
 
+.sub-text {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, sans-serif;
+    font-size: 13px;
+    padding: 50px;    
+}
+
+footer {
+    display: flex;
+    padding-top: 40px;
+    margin-left: -40px;
+    margin-right: -40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, sans-serif;
+    background-color: rgb(226, 226, 226);
+    height: 500px;
+    justify-content: space-evenly;
+}
+
+.col > ul > lh, li {
+    list-style-type: none;
+}
+
+lh {
+    font-size: 12px;
+    margin-bottom: 160px;
+    font-weight: 500;
+}
+
+li {
+    line-height: 2rem;
+    font-size: 11px;
+}
